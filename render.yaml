@@ -40,7 +40,7 @@ services:
     staticPublishPath: frontend/dist
     envVars:
       - key: VITE_API_URL
-        value: https://breathe-esg-api.onrender.com
+        value: https://breathe-esg-api-3ozg.onrender.com
     headers:
       - path: /*
         name: Cache-Control
