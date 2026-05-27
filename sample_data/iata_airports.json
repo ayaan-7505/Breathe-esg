@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "description": "IATA airport codes and coordinates for airports referenced in travel_expense_report.csv",
+    "coordinate_source": "OurAirports database (public domain), verified against IATA official data",
+    "notes": "Coordinates are in decimal degrees (WGS-84). Used for great-circle distance calculation via haversine formula."
+  },
+  "airports": {
+    "JFK": {
+      "name": "John F. Kennedy International Airport",
+      "city": "New York",
+      "country": "US",
+      "lat": 40.6413,
+      "lon": -73.7781
+    },
+    "LAX": {
+      "name": "Los Angeles International Airport",
+      "city": "Los Angeles",
+      "country": "US",
+      "lat": 33.9425,
+      "lon": -118.4081
+    },
+    "ORD": {
+      "name": "O'Hare International Airport",
+      "city": "Chicago",
+      "country": "US",
+      "lat": 41.9742,
+      "lon": -87.9073
+    },
+    "LHR": {
+      "name": "Heathrow Airport",
+      "city": "London",
+      "country": "GB",
+      "lat": 51.4700,
+      "lon": -0.4543
+    },
+    "SFO": {
+      "name": "San Francisco International Airport",
+      "city": "San Francisco",
+      "country": "US",
+      "lat": 37.6213,
+      "lon": -122.3790
+    },
+    "SIN": {
+      "name": "Singapore Changi Airport",
+      "city": "Singapore",
+      "country": "SG",
+      "lat": 1.3644,
+      "lon": 103.9915
+    },
+    "AUS": {
+      "name": "Austin-Bergstrom International Airport",
+      "city": "Austin",
+      "country": "US",
+      "lat": 30.1975,
+      "lon": -97.6664
+    },
+    "DEN": {
+      "name": "Denver International Airport",
+      "city": "Denver",
+      "country": "US",
+      "lat": 39.8561,
+      "lon": -104.6737
+    },
+    "BOM": {
+      "name": "Chhatrapati Shivaji Maharaj International Airport",
+      "city": "Mumbai",
+      "country": "IN",
+      "lat": 19.0896,
+      "lon": 72.8656
+    },
+    "NRT": {
+      "name": "Narita International Airport",
+      "city": "Tokyo",
+      "country": "JP",
+      "lat": 35.7647,
+      "lon": 140.3864
+    },
+    "FRA": {
+      "name": "Frankfurt Airport",
+      "city": "Frankfurt",
+      "country": "DE",
+      "lat": 50.0379,
+      "lon": 8.5622
+    },
+    "DEL": {
+      "name": "Indira Gandhi International Airport",
+      "city": "New Delhi",
+      "country": "IN",
+      "lat": 28.5562,
+      "lon": 77.1000
+    },
+    "DFW": {
+      "name": "Dallas/Fort Worth International Airport",
+      "city": "Dallas",
+      "country": "US",
+      "lat": 32.8998,
+      "lon": -97.0403
+    },
+    "MIA": {
+      "name": "Miami International Airport",
+      "city": "Miami",
+      "country": "US",
+      "lat": 25.7959,
+      "lon": -80.2870
+    },
+    "SEA": {
+      "name": "Seattle-Tacoma International Airport",
+      "city": "Seattle",
+      "country": "US",
+      "lat": 47.4502,
+      "lon": -122.3088
+    },
+    "BOS": {
+      "name": "Boston Logan International Airport",
+      "city": "Boston",
+      "country": "US",
+      "lat": 42.3656,
+      "lon": -71.0096
+    },
+    "BOG": {
+      "name": "El Dorado International Airport",
+      "city": "Bogota",
+      "country": "CO",
+      "lat": 4.7016,
+      "lon": -74.1469
+    },
+    "PVG": {
+      "name": "Shanghai Pudong International Airport",
+      "city": "Shanghai",
+      "country": "CN",
+      "lat": 31.1443,
+      "lon": 121.8083
+    },
+    "IAH": {
+      "name": "George Bush Intercontinental Airport",
+      "city": "Houston",
+      "country": "US",
+      "lat": 29.9902,
+      "lon": -95.3368
+    },
+    "CDG": {
+      "name": "Charles de Gaulle Airport",
+      "city": "Paris",
+      "country": "FR",
+      "lat": 49.0097,
+      "lon": 2.5479
+    }
+  }
+}

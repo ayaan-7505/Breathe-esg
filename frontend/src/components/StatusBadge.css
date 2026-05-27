@@ -1,0 +1,23 @@
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.badge-pending .status-dot {
+  background: var(--text-muted);
+}
+.badge-reviewed .status-dot {
+  background: var(--accent-info);
+}
+.badge-flagged .status-dot {
+  background: var(--accent-warning);
+  animation: pulse 2s ease-in-out infinite;
+}
+.badge-approved .status-dot {
+  background: var(--accent-success);
+}
+.badge-locked .status-dot {
+  background: var(--accent-primary);
+}

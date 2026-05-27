@@ -1,0 +1,31 @@
+Report_ID,Employee_Name,Employee_ID,Trip_Type,Departure_City,Departure_Code,Arrival_City,Arrival_Code,Departure_Date,Return_Date,Cabin_Class,Distance_km,Amount,Currency,Vendor,Booking_Reference
+RPT-2025-001,Sarah Chen,EMP-1042,Air,New York,JFK,Los Angeles,LAX,2025-01-15,2025-01-18,Economy,3983,489.00,USD,Delta Air Lines,DL-8827451
+RPT-2025-001,Sarah Chen,EMP-1042,Hotel,Los Angeles,,Los Angeles,,2025-01-15,2025-01-18,,0,657.00,USD,Marriott Courtyard,MAR-98712
+RPT-2025-001,Sarah Chen,EMP-1042,Car_Rental,Los Angeles,,Los Angeles,,2025-01-15,2025-01-18,,285,178.50,USD,Enterprise,ENT-33421
+RPT-2025-002,James Rodriguez,EMP-2087,Air,Chicago,ORD,London,LHR,2025-01-22,2025-01-29,Business,,4242.00,GBP,British Airways,BA-6654210
+RPT-2025-002,James Rodriguez,EMP-2087,Hotel,London,,London,,2025-01-22,2025-01-29,,0,2100.00,GBP,Hilton London Bankside,HIL-77023
+RPT-2025-003,Priya Sharma,EMP-3015,Air,San Francisco,SFO,Singapore,SIN,2025-02-03,2025-02-07,Business,13593,5890.00,USD,Singapore Airlines,SQ-1120045
+RPT-2025-003,Priya Sharma,EMP-3015,Hotel,Singapore,,Singapore,,2025-02-03,2025-02-07,,0,1240.00,SGD,Pan Pacific Singapore,PP-45619
+RPT-2025-004,Michael O'Brien,EMP-1088,Air,Austin,AUS,Denver,DEN,2025-02-10,2025-02-12,Economy,1504,312.00,USD,United Airlines,UA-7710983
+RPT-2025-004,Michael O'Brien,EMP-1088,Air,Denver,DEN,Austin,AUS,2025-02-12,,Economy,1504,298.00,USD,United Airlines,UA-7710999
+RPT-2025-005,Lisa Wang,EMP-4201,Air,New York,JFK,Mumbai,BOM,2025-02-18,,Business,,6280.00,USD,Air India,AI-3300821
+RPT-2025-005,Lisa Wang,EMP-4201,Hotel,Mumbai,,Mumbai,,2025-02-18,2025-02-25,,0,980.00,USD,Taj Mahal Palace,TAJ-10254
+RPT-2025-006,David Kim,EMP-2045,Air,Los Angeles,LAX,Tokyo,NRT,2025-03-01,2025-03-08,Premium_Economy,8838,2450.00,USD,ANA,NH-9982101
+RPT-2025-006,David Kim,EMP-2045,Hotel,Tokyo,,Tokyo,,2025-03-01,2025-03-08,,0,1890.00,JPY,Hotel New Otani,HNO-55834
+RPT-2025-006,David Kim,EMP-2045,Rail,Tokyo,,Osaka,,2025-03-04,2025-03-05,,515,135.00,USD,JR Central Shinkansen,JRC-28811
+RPT-2025-007,Anna Mueller,EMP-5012,Air,Frankfurt,FRA,New Delhi,DEL,2025-03-10,2025-03-15,Business,5764,3200.00,EUR,Lufthansa,LH-4429001
+RPT-2025-007,Anna Mueller,EMP-5012,Hotel,New Delhi,,New Delhi,,2025-03-10,2025-03-15,,0,650.00,EUR,The Oberoi New Delhi,OBR-20145
+RPT-2025-008,Robert Taylor,EMP-1056,Air,Dallas,DFW,Miami,MIA,2025-03-18,2025-03-20,Economy,1753,275.00,USD,American Airlines,AA-5543782
+RPT-2025-008,Robert Taylor,EMP-1056,Hotel,Miami,,Miami,,2025-03-18,2025-03-20,,0,438.00,USD,Hyatt Regency Miami,HYA-66201
+RPT-2025-009,Emily Foster,EMP-3098,Air,Seattle,SEA,Boston,BOS,2025-03-25,2025-03-28,Economy,,385.00,USD,JetBlue,B6-2218734
+RPT-2025-009,Emily Foster,EMP-3098,Car_Rental,Boston,,Boston,,2025-03-25,2025-03-28,,340,205.00,USD,Hertz,HTZ-44190
+RPT-2025-010,Carlos Mendez,EMP-2034,Air,Miami,MIA,Bogota,BOG,2025-04-02,2025-04-06,Economy,2593,520.00,USD,Avianca,AV-8871002
+RPT-2025-010,Carlos Mendez,EMP-2034,Hotel,Bogota,,Bogota,,2025-04-02,2025-04-06,,0,480.00,USD,JW Marriott Bogota,MAR-11876
+RPT-2025-011,Wei Zhang,EMP-4150,Air,Shanghai,PVG,Chenzhou,ZZZ,2025-04-10,2025-04-13,Economy,,320.00,CNY,China Southern,CZ-1198211
+RPT-2025-011,Wei Zhang,EMP-4150,Hotel,Chenzhou,,Chenzhou,,2025-04-10,2025-04-13,,0,1200.00,CNY,Pullman Chenzhou,PUL-89023
+RPT-2025-012,Thomas Wilson,EMP-1023,Air,Houston,IAH,London,LHR,2025-04-15,2025-04-22,First,7825,8950.00,USD,British Airways,BA-6698120
+RPT-2025-012,Thomas Wilson,EMP-1023,Hotel,London,,London,,2025-04-15,2025-04-22,,0,3500.00,GBP,The Savoy,SAV-00412
+RPT-2025-013,Aisha Patel,EMP-3077,Air,Boston,BOS,Paris,CDG,2025-05-01,2025-05-06,Business,5543,4100.00,EUR,Air France,AF-7780301
+RPT-2025-013,Aisha Patel,EMP-3077,Hotel,Paris,,Paris,,2025-05-01,2025-05-06,,0,1750.00,EUR,Le Meridien Etoile,LME-32510
+RPT-2025-014,Kevin Nguyen,EMP-2091,Air,San Francisco,SFO,Austin,AUS,2025-05-12,2025-05-14,Economy,2450,345.00,USD,Southwest Airlines,WN-9917823
+RPT-2025-014,Kevin Nguyen,EMP-2091,Car_Rental,Austin,,Austin,,2025-05-12,2025-05-14,,190,129.00,USD,National,NAT-78822

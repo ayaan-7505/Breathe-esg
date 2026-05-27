@@ -1,0 +1,28 @@
+Account_Number,Meter_ID,Facility_Name,Service_Address,Billing_Period_Start,Billing_Period_End,Consumption_kWh,Demand_kW,Cost_USD,Tariff_Type,Read_Type
+ACC-10045,MTR-1001,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-01-15,2025-02-14,42500,185,5312.50,C&I General Service,actual
+ACC-10045,MTR-1002,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-01-15,2025-02-14,18200,92,2275.00,C&I General Service,actual
+ACC-10045,MTR-1001,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-02-15,2025-03-14,44100,190,5512.50,C&I General Service,actual
+ACC-10045,MTR-1002,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-02-15,2025-03-14,17800,88,2225.00,C&I General Service,actual
+ACC-10045,MTR-1001,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-03-15,2025-04-14,48200,210,6025.00,C&I General Service,actual
+ACC-10045,MTR-1002,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-03-15,2025-04-14,19500,95,2437.50,C&I General Service,actual
+ACC-20078,MTR-2001,Westside Manufacturing Plant,4500 Industrial Pkwy San Antonio TX 78220,2025-01-15,2025-02-14,128000,520,14080.00,Industrial Large Power,actual
+ACC-20078,MTR-2001,Westside Manufacturing Plant,4500 Industrial Pkwy San Antonio TX 78220,2025-02-15,2025-03-14,135000,545,14850.00,Industrial Large Power,actual
+ACC-20078,MTR-2001,Westside Manufacturing Plant,4500 Industrial Pkwy San Antonio TX 78220,2025-03-15,2025-04-14,131000,530,14410.00,Industrial Large Power,actual
+ACC-20078,MTR-2001,Westside Manufacturing Plant,4500 Industrial Pkwy San Antonio TX 78220,2025-04-15,2025-05-14,398000,540,43780.00,Industrial Large Power,estimated
+ACC-30112,MTR-3001,East Distribution Center,780 Logistics Way Dallas TX 75201,2025-01-15,2025-02-14,62000,280,7440.00,C&I Large Power,actual
+ACC-30112,MTR-3002,East Distribution Center,780 Logistics Way Dallas TX 75201,2025-01-15,2025-02-14,8500,45,1020.00,C&I General Service,actual
+ACC-30112,MTR-3001,East Distribution Center,780 Logistics Way Dallas TX 75201,2025-02-15,2025-03-14,59800,270,7176.00,C&I Large Power,actual
+ACC-30112,MTR-3002,East Distribution Center,780 Logistics Way Dallas TX 75201,2025-02-15,2025-03-14,8200,42,984.00,C&I General Service,actual
+ACC-30112,MTR-3001,East Distribution Center,780 Logistics Way Dallas TX 75201,2025-04-15,2025-05-14,64500,290,7740.00,C&I Large Power,actual
+ACC-30112,MTR-3002,East Distribution Center,780 Logistics Way Dallas TX 75201,2025-04-15,2025-05-14,9100,48,1092.00,C&I General Service,actual
+ACC-40201,MTR-4001,Regional Office - Portland,2200 NW Flanders St Portland OR 97210,2025-01-18,2025-02-17,12500,58,1625.00,Small General Service,actual
+ACC-40201,MTR-4001,Regional Office - Portland,2200 NW Flanders St Portland OR 97210,2025-02-18,2025-03-17,11800,55,1534.00,Small General Service,actual
+ACC-40201,MTR-4001,Regional Office - Portland,2200 NW Flanders St Portland OR 97210,2025-03-18,2025-04-17,12200,56,1586.00,Small General Service,estimated
+ACC-40201,MTR-4001,Regional Office - Portland,2200 NW Flanders St Portland OR 97210,2025-04-18,2025-05-17,13100,60,1703.00,Small General Service,actual
+ACC-10045,MTR-1001,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-04-15,2025-05-14,52800,225,6600.00,C&I General Service,actual
+ACC-10045,MTR-1002,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-04-15,2025-05-14,21300,98,2662.50,C&I General Service,actual
+ACC-10045,MTR-1001,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-05-15,2025-06-14,55200,235,6900.00,C&I General Service,actual
+ACC-10045,MTR-1001,Headquarters Building,100 Corporate Blvd Suite 200 Austin TX 78701,2025-05-10,2025-06-14,54800,232,6850.00,C&I General Service,actual
+ACC-20078,MTR-2002,Westside Manufacturing Plant,4500 Industrial Pkwy San Antonio TX 78220,2025-01-15,2025-02-14,22000,110,2640.00,C&I General Service,actual
+ACC-20078,MTR-2002,Westside Manufacturing Plant,4500 Industrial Pkwy San Antonio TX 78220,2025-02-15,2025-03-14,23500,115,2820.00,C&I General Service,actual
+ACC-20078,MTR-2002,Westside Manufacturing Plant,4500 Industrial Pkwy San Antonio TX 78220,2025-03-15,2025-04-14,21800,108,2616.00,C&I General Service,estimated

@@ -1,0 +1,24 @@
+# Breathe ESG Backend — Python Dependencies
+# ===========================================
+# Django stack
+Django>=5.1,<5.2
+djangorestframework>=3.15,<4.0
+django-cors-headers>=4.3,<5.0
+django-filter>=24.0,<25.0
+
+# Database
+psycopg2-binary>=2.9,<3.0
+
+# Date / geo utilities
+python-dateutil>=2.9,<3.0
+geopy>=2.4,<3.0
+
+# Production
+gunicorn>=22.0,<23.0
+whitenoise>=6.6,<7.0
+dj-database-url>=2.1,<3.0
+
+# Dev / testing (optional but recommended)
+# pytest-django>=4.8,<5.0
+# factory-boy>=3.3,<4.0
+# coverage>=7.4,<8.0

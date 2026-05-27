@@ -1,0 +1,163 @@
+{
+  "meta": {
+    "description": "Emission factors used for GHG calculations in Breathe ESG",
+    "last_updated": "2025-06-01",
+    "notes": "All factors are kg CO2e per unit unless stated otherwise. CO2e includes CO2, CH4, and N2O weighted by AR5 GWP values (CH4=28, N2O=265)."
+  },
+  "stationary_combustion": {
+    "diesel": {
+      "factor_kg_co2e_per_liter": 2.70,
+      "factor_kg_co2_per_gallon": 10.21,
+      "factor_kg_co2e_per_gallon": 10.28,
+      "scope": 1,
+      "source": "EPA GHG Emission Factors Hub 2025, Table 1 (Stationary Combustion); DEFRA 2024 Fuels worksheet",
+      "source_url": "https://www.epa.gov/climateleadership/ghg-emission-factors-hub",
+      "notes": "EPA provides 10.21 kg CO2/gal for diesel. DEFRA 2024 Condensed Set reports ~2.70 kg CO2e/L for 100% mineral diesel. CH4 and N2O contributions are small (~0.07 kg CO2e/gal combined). Factor includes combustion emissions only (tank-to-wheel), not upstream/well-to-tank.",
+      "year": 2024
+    },
+    "natural_gas": {
+      "factor_kg_co2e_per_m3": 1.93,
+      "factor_kg_co2_per_mmbtu": 53.06,
+      "heat_content_mmbtu_per_m3": 0.03623,
+      "scope": 1,
+      "source": "EPA GHG Emission Factors Hub 2025, Table 1 (Stationary Combustion); heat content from EPA default (1026 BTU/scf)",
+      "source_url": "https://www.epa.gov/climateleadership/ghg-emission-factors-hub",
+      "notes": "EPA gives 53.06 kg CO2/MMBtu. Converted to per-m3 using: 1 m3 = 35.3147 scf × 0.001026 MMBtu/scf = 0.03623 MMBtu/m3. So 53.06 × 0.03623 = 1.922 ≈ 1.93 kg CO2e/m3. CH4 = 1.0 g/MMBtu, N2O = 0.1 g/MMBtu.",
+      "year": 2024
+    },
+    "lpg": {
+      "factor_kg_co2e_per_liter": 1.56,
+      "factor_kg_co2e_per_kg": 2.99,
+      "factor_kg_co2_per_gallon": 5.68,
+      "scope": 1,
+      "source": "EPA GHG Emission Factors Hub 2025 (propane); DEFRA 2024 Fuels worksheet (LPG)",
+      "source_url": "https://www.epa.gov/climateleadership/ghg-emission-factors-hub",
+      "notes": "EPA gives 5.68 kg CO2/gal for propane. Per liter: 5.68/3.785 = 1.50 kg CO2/L. DEFRA 2024 lists ~1.56 kg CO2e/L for LPG (which includes the slightly higher GWP-weighted CH4/N2O). Per-kg factor: ~2.99 kg CO2e/kg at LPG density of ~0.52 kg/L.",
+      "year": 2024
+    }
+  },
+  "purchased_electricity": {
+    "us_national_average": {
+      "factor_kg_co2e_per_kwh": 0.3937,
+      "scope": 2,
+      "source": "EPA eGRID2023 (released January 2025) — US national average output emission rate",
+      "source_url": "https://www.epa.gov/egrid",
+      "notes": "Derived from eGRID2023 national total: ~867.2 lbs CO2/MWh → 0.3937 kg CO2/kWh. This is a location-based factor. For market-based reporting, use supplier-specific or residual-mix factors. Regional eGRID subregion factors vary significantly (e.g., NWPP ≈ 0.25, SRMW ≈ 0.65 kg CO2e/kWh).",
+      "year": 2023
+    },
+    "egrid_subregions": {
+      "ERCT": {
+        "factor_kg_co2e_per_kwh": 0.3732,
+        "region_name": "ERCOT All (Texas)",
+        "notes": "Texas grid is predominantly natural gas, wind, and solar. Lower than national average."
+      },
+      "NWPP": {
+        "factor_kg_co2e_per_kwh": 0.2496,
+        "region_name": "Northwest Power Pool (OR, WA, ID)",
+        "notes": "Heavy hydroelectric mix drives lower emission intensity."
+      },
+      "SRMW": {
+        "factor_kg_co2e_per_kwh": 0.6523,
+        "region_name": "SERC Midwest",
+        "notes": "Higher coal dependence in some Midwest states."
+      }
+    },
+    "source": "EPA eGRID2023",
+    "source_url": "https://www.epa.gov/egrid",
+    "year": 2023
+  },
+  "business_travel": {
+    "air_travel": {
+      "domestic": {
+        "economy": {
+          "factor_kg_co2e_per_pkm": 0.24587,
+          "notes": "Includes radiative forcing multiplier. Domestic = flights under ~700 km (UK definition); we apply to US domestic as an approximation."
+        },
+        "business": {
+          "factor_kg_co2e_per_pkm": 0.42882,
+          "notes": "Business class typically ~1.5-2x economy due to larger seat footprint."
+        }
+      },
+      "short_haul_international": {
+        "economy": {
+          "factor_kg_co2e_per_pkm": 0.15102,
+          "notes": "Short haul = flights under ~3,700 km. Lower per-km than domestic due to fuel efficiency of cruise phase."
+        },
+        "premium_economy": {
+          "factor_kg_co2e_per_pkm": 0.24164,
+          "notes": "~1.6x economy."
+        },
+        "business": {
+          "factor_kg_co2e_per_pkm": 0.45307,
+          "notes": "~3x economy for short-haul."
+        }
+      },
+      "long_haul_international": {
+        "economy": {
+          "factor_kg_co2e_per_pkm": 0.14787,
+          "notes": "Long haul = flights over 3,700 km. Fuel-per-km drops with distance but radiative forcing applies."
+        },
+        "premium_economy": {
+          "factor_kg_co2e_per_pkm": 0.23660,
+          "notes": "~1.6x economy."
+        },
+        "business": {
+          "factor_kg_co2e_per_pkm": 0.42882,
+          "notes": "~2.9x economy. Significant impact due to lie-flat seat area."
+        },
+        "first": {
+          "factor_kg_co2e_per_pkm": 0.59164,
+          "notes": "~4x economy. First class seats occupy substantially more floor space."
+        }
+      },
+      "scope": 3,
+      "source": "UK Government GHG Conversion Factors 2024, Business Travel - Air tab (DESNZ/DEFRA)",
+      "source_url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2024",
+      "notes": "Factors include radiative forcing (RF) multiplier of ~1.9x to account for non-CO2 effects of aviation (contrails, NOx, water vapour at altitude). Without RF, values are roughly half. DEFRA categorisation by haul length; we classify based on great-circle distance.",
+      "year": 2024
+    },
+    "hotel_stays": {
+      "factor_kg_co2e_per_room_night": {
+        "USA": 21.01,
+        "UK": 15.92,
+        "India": 18.07,
+        "Singapore": 22.58,
+        "Japan": 19.80,
+        "Germany": 14.53,
+        "France": 11.88,
+        "Colombia": 13.64,
+        "China": 30.90,
+        "global_average": 18.50
+      },
+      "scope": 3,
+      "source": "UK Government GHG Conversion Factors 2024, Hotel Stay tab (derived from Cornell Hotel Sustainability Benchmarking Index)",
+      "source_url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2024",
+      "notes": "Country-specific factors based on average hotel energy intensity. Actual emissions vary significantly by hotel class, climate zone, and energy source. These are spend-independent proxies — use actual hotel energy data when available.",
+      "year": 2024
+    },
+    "car_rental": {
+      "factor_kg_co2e_per_km": 0.17148,
+      "scope": 3,
+      "source": "UK Government GHG Conversion Factors 2024, Business Travel - Land tab (average car, unknown fuel type)",
+      "source_url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2024",
+      "notes": "Average across petrol/diesel/hybrid for a medium-sized car. If fuel type and vehicle size are known, more specific factors should be used. Excludes upstream fuel production emissions.",
+      "year": 2024
+    },
+    "rail": {
+      "factor_kg_co2e_per_pkm": 0.03549,
+      "scope": 3,
+      "source": "UK Government GHG Conversion Factors 2024, Business Travel - Land tab (national rail, average)",
+      "source_url": "https://www.gov.uk/government/publications/greenhouse-gas-reporting-conversion-factors-2024",
+      "notes": "UK national rail average. Rail emission factors vary hugely by country electrification level. Japanese Shinkansen would be lower (~0.02 kg CO2e/pkm).",
+      "year": 2024
+    }
+  },
+  "unit_conversions": {
+    "gallons_to_liters": 3.78541,
+    "kg_lpg_to_liters": 1.9231,
+    "m3_to_scf": 35.3147,
+    "mmbtu_to_kwh": 293.071,
+    "miles_to_km": 1.60934,
+    "notes": "LPG density varies by temperature; 1.9231 L/kg assumes liquid propane at 15°C (density ~0.52 kg/L)."
+  }
+}
