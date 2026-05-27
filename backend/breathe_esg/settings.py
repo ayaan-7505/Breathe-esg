@@ -159,6 +159,20 @@ REST_FRAMEWORK = {
 CORS_ALLOW_ALL_ORIGINS = DEBUG  # Lock down in production
 CORS_ALLOW_CREDENTIALS = True
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "https://breathe-esg-frontend-ov9n.onrender.com",
+]
+
+# Allow adding extra origins via environment variables
+_extra_cors = os.environ.get("CORS_ALLOWED_ORIGINS")
+if _extra_cors:
+    for origin in _extra_cors.split(","):
+        clean_origin = origin.strip()
+        if clean_origin and clean_origin not in CORS_ALLOWED_ORIGINS:
+            CORS_ALLOWED_ORIGINS.append(clean_origin)
+
 # ---------------------------------------------------------------------------
 # File upload limits (50 MB)
 # ---------------------------------------------------------------------------
