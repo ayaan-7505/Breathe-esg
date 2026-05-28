@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import {
   Search, ChevronRight, ChevronLeft, ChevronsLeft, ChevronsRight,
   Clock, Calendar, Filter, RefreshCw,
